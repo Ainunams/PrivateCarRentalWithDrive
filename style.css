@@ -990,14 +990,29 @@ button:focus-visible {
   font-weight: 400;
 }
 
-/* จัดการให้แกลเลอรีรูปภาพเป็น 1 คอลัมน์เมื่อเปิดบนมือถือ/แท็บเล็ต */
-@media (max-width: 900px) {
+/* จัดการให้แกลเลอรีรูปภาพรองรับ 6 คอลัมน์บนจอคอม และลดหลั่นลงตามขนาดจอ */
+@media (max-width: 1200px) {
   .gallery-grid {
-    grid-template-columns: 1fr !important; /* บังคับให้เหลือแถวละ 1 รูป */
-    gap: 20px !important; /* ลดระยะห่างระหว่างกรอบรูปให้พอดีกับจอมือถือ */
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ) !important; /* จอเล็กลงมาหน่อย เหลือ 4 แถว */
   }
 }
 
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr) !important; /* แท็บเล็ต เหลือ 2 แถว */
+    gap: 15px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr !important; /* มือถือ เหลือ 1 แถวเหมือนเดิม */
+    gap: 15px !important;
+  }
+}
 /* =========================================
    ดีไซน์หน้าติดต่อเรา (Professional Contact)
    ========================================= */
