@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เช่าเหมารถพร้อมคนขับ | บริการรถส่วนตัว 24 ชม.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=Mitr:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css?v=4" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="logo"
+          ><span class="logo-mark"></span>เช่าเหมารถพร้อมคนขับ</a
+        >
+        <nav class="nav-links">
+          <a href="index.html">หน้าแรก</a>
+          <a href="services.html">บริการของเรา</a>
+          <a href="vehicles.html">ประเภทรถ</a>
+          <a href="contact.html">ติดต่อเรา</a>
+        </nav>
+
+        <div style="display: flex; align-items: center; gap: 10px">
+          <a href="contact.html" class="nav-cta">จองรถเลย</a>
+          <button class="hamburger-menu" aria-label="เปิดเมนู">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- ใส่โค้ดนี้ไว้ก่อนปิดแท็ก body ในทุกๆ หน้า -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (hamburger && navLinks) {
+          hamburger.addEventListener("click", function () {
+            // สั่งเปิด-ปิดคลาส active เพื่อแสดง/ซ่อนเมนู
+            navLinks.classList.toggle("active");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<!-- ===== ส่วนหัวของหน้า (Page Header) ===== -->
+<section class="page-header">
+  <div class="container">
+    <!-- ใช้ h1 แต่ปรับน้ำหนักฟอนต์ให้บางลง (font-weight: 400) -->
+    <h2>
+      ตอบโจทย์ทุกความต้องการในการเดินทางของคุณ
+      ด้วยความปลอดภัยและเป็นส่วนตัวสูงสุด
+    </h2>
+    <h2>พร้อมพนักงานขับรถมืออาชีพที่ดูแลคุณเหมือนคนในครอบครัว</h2>
+  </div>
+</section>
+
+<section class="services-detail">
+  <div class="container">
+    <div class="service-grid">
+      <div class="service-item">
+        <div class="service-emoji">✈️</div>
+        <div class="service-content">
+          <h2>บริการรับ-ส่งสนามบิน (Airport Transfer)</h2>
+          <p>
+            บริการรับจากบ้านสู่สนามบิน (สุวรรณภูมิ / ดอนเมือง)
+            หรือรับจากสนามบินไปส่งถึงที่พัก ตรงต่อเวลา
+            ไม่ต้องเหนื่อยยกสัมภาระเอง
+            ให้คุณเริ่มต้นและจบการเดินทางได้อย่างไร้ความกังวล
+          </p>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-emoji">🏖️</div>
+        <div class="service-content">
+          <h2>เหมานำเที่ยว (Private Tour)</h2>
+          <p>
+            ท่องเที่ยวอย่างอิสระแบบส่วนตัว แวะพัก ถ่ายรูป
+            หรือทานอาหารได้ตามใจชอบ ไม่ต้องเร่งรีบตามตารางทัวร์
+            พร้อมคนขับที่ชำนาญเส้นทางและสามารถแนะนำจุดเช็คอินที่น่าสนใจให้คุณได้
+          </p>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-emoji">💼</div>
+        <div class="service-content">
+          <h2>เช่าเหมาวันสำหรับธุรกิจ (Business & Corporate)</h2>
+          <p>
+            สร้างภาพลักษณ์ที่ดีในการติดต่อธุรกิจ ดูงาน ประชุม หรือรับรองแขก VIP
+            ด้วยรถที่สะอาดระดับพรีเมียม และคนขับที่ผ่านการอบรมมารยาท
+            แต่งกายสุภาพเรียบร้อย
+          </p>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-emoji">🛣️</div>
+        <div class="service-content">
+          <h2>เดินทางข้ามจังหวัด (City Transfer)</h2>
+          <p>
+            บริการเหมารถเดินทางไกล กลับภูมิลำเนา หรือไปต่างจังหวัด
+            นั่งสบายตลอดเส้นทาง
+            ปลอดภัยด้วยพนักงานขับรถที่มีประสบการณ์สูงและรถที่ผ่านการตรวจสภาพอย่างเข้มงวด
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== พื้นที่บริการ (Service Area) ===== -->
+    <section class="service-area">
+      <div class="container">
+        <div
+          class="section-head"
+          style="text-align: center; margin-bottom: 40px"
+        >
+          <h2>พื้นที่ให้บริการของเรา</h2>
+          <p
+            style="
+              color: var(--slate);
+              margin-top: 10px;
+              max-width: 600px;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          >
+            ครอบคลุมทุกการเดินทาง ไม่ว่าจะใกล้หรือไกล
+            ด้วยรถและคนขับที่เชี่ยวชาญในทุกเส้นทาง
+          </p>
+        </div>
+
+        <div class="area-grid">
+          <div class="area-card">
+            <h3>📍 กรุงเทพฯ และปริมณฑล</h3>
+            <div class="area-list col-1">
+              <p>✓ บริการรับ-ส่งสนามบิน (สุวรรณภูมิ / ดอนเมือง)</p>
+              <p>✓ นำเที่ยวรอบเมือง</p>
+              <p>✓ เช่าเหมาวันสำหรับติดต่อธุรกิจ</p>
+            </div>
+            <h3>เส้นทางอื่นๆ (สามารถสอบถามเพิ่มเติมได้)</h3>
+          </div>
+
+          <div class="area-card">
+            <h3>📍 ภาคตะวันออก และชายทะเล</h3>
+            <div class="area-list col-2">
+              <p>✓ ชลบุรี</p>
+              <p>✓ จันทบุรี</p>
+              <p>✓ พัทยา</p>
+              <p>✓ ตราด (ท่าเรือเกาะช้าง)</p>
+              <p>✓ ระยอง</p>
+              <p>✓ สมุทรปราการ (บางปู)</p>
+            </div>
+            <h3>เส้นทางอื่นๆ (สามารถสอบถามเพิ่มเติมได้)</h3>
+          </div>
+
+          <div class="area-card">
+            <h3>📍 ภาคกลาง และตะวันตก</h3>
+            <div class="area-list col-2">
+              <p>✓ พระนครศรีอยุธยา</p>
+              <p>✓ ราชบุรี</p>
+              <p>✓ นครปฐม</p>
+              <p>✓ เพชรบุรี (ชะอำ)</p>
+              <p>✓ กาญจนบุรี</p>
+              <p>✓ ประจวบคีรีขันธ์ (หัวหิน)</p>
+            </div>
+            <h3>เส้นทางอื่นๆ (สามารถสอบถามเพิ่มเติมได้)</h3>
+          </div>
+
+          <div class="area-card">
+            <h3>📍 ภาคอีสาน และภาคเหนือ</h3>
+            <div class="area-list col-1">
+              <p>✓ นครราชสีมา (เขาใหญ่)</p>
+              <p>✓ ขอนแก่น</p>
+              <p>✓ เชียงใหม่</p>
+            </div>
+            <h3>เส้นทางอื่นๆ (สามารถสอบถามเพิ่มเติมได้)</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>

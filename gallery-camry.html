@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เช่าเหมารถพร้อมคนขับ | บริการรถส่วนตัว 24 ชม.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=Mitr:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css?v=4" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="logo"
+          ><span class="logo-mark"></span>เช่าเหมารถพร้อมคนขับ</a
+        >
+        <nav class="nav-links">
+          <a href="index.html">หน้าแรก</a>
+          <a href="services.html">บริการของเรา</a>
+          <a href="vehicles.html">ประเภทรถ</a>
+          <a href="contact.html">ติดต่อเรา</a>
+        </nav>
+
+        <div style="display: flex; align-items: center; gap: 10px">
+          <a href="contact.html" class="nav-cta">จองรถเลย</a>
+          <button class="hamburger-menu" aria-label="เปิดเมนู">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
+
+<!-- ส่วนหัวของหน้าแกลเลอรี -->
+    <section class="page-header">
+      <div class="container">
+        <h1>แกลเลอรีรูปภาพ Toyota Camry</h1>
+        <p>บรรยากาศภายในของรถ Toyota Camry พร้อมให้บริการ</p>
+      </div>
+    </section>
+
+<!-- ส่วนแสดงกรอบรูปภาพ 3 รูป -->
+    <section style="padding: 60px 0;">
+      <div class="container">
+        <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+          
+          <!-- กรอบรูปที่ 1 -->
+          <div class="gallery-card" style="background: var(--white); border-radius: 16px; overflow: hidden; border: 1px solid rgba(15, 36, 56, 0.08); box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
+            <div style="height: 250px; background: #f4f4f4; overflow: hidden;">
+              <img src="camry1.png" alt="Toyota Altis มุมที่ 1" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 20px; text-align: center;">
+              <h3 style="font-size: 1.1rem; color: var(--navy);">มุมมองภายในด้านหน้า</h3>
+            </div>
+          </div>
+
+          <!-- กรอบรูปที่ 2 -->
+          <div class="gallery-card" style="background: var(--white); border-radius: 16px; overflow: hidden; border: 1px solid rgba(15, 36, 56, 0.08); box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
+            <div style="height: 250px; background: #f4f4f4; overflow: hidden;">
+              <img src="camry2.png" alt="Toyota Altis มุมที่ 2" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 20px; text-align: center;">
+              <h3 style="font-size: 1.1rem; color: var(--navy);">เบาะนั่งภายในกว้างขวาง</h3>
+            </div>
+          </div>
+
+          <!-- กรอบรูปที่ 3 -->
+          <div class="gallery-card" style="background: var(--white); border-radius: 16px; overflow: hidden; border: 1px solid rgba(15, 36, 56, 0.08); box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
+            <div style="height: 250px; background: #f4f4f4; overflow: hidden;">
+              <img src="camry3.png" alt="Toyota Altis มุมที่ 3" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 20px; text-align: center;">
+              <h3 style="font-size: 1.1rem; color: var(--navy);">พื้นที่เก็บสัมภาระด้านหลัง</h3>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ปุ่มย้อนกลับไปหน้าประเภทรถ -->
+        <div style="text-align: center; margin-top: 50px;">
+          <a href="vehicles.html" class="btn-secondary" style="padding: 12px 30px; border-radius: 999px; border: 1px solid var(--navy); color: var(--navy); display: inline-block;">← กลับสู่หน้าประเภทรถ</a>
+        </div>
+      </div>
+    </section>
+<!-- ใส่โค้ดนี้ไว้ก่อนปิดแท็ก body ในทุกๆ หน้า -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (hamburger && navLinks) {
+          hamburger.addEventListener('click', function() {
+            // สั่งเปิด-ปิดคลาส active เพื่อแสดง/ซ่อนเมนู
+            navLinks.classList.toggle('active');
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
