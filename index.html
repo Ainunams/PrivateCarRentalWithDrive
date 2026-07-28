@@ -21,7 +21,7 @@
           ><span class="logo-mark"></span>เช่าเหมารถพร้อมคนขับ</a
         >
         <nav class="nav-links">
-          <a href="index.html">หน้าแรก</a>
+          <a href="index.html" class="active">หน้าแรก</a>
           <a href="services.html">บริการของเรา</a>
           <a href="vehicles.html">ประเภทรถ</a>
           <a href="contact.html">ติดต่อเรา</a>
@@ -193,53 +193,142 @@
       </div>
     </section>
 
-    <!-- ส่วนความประทับใจของลูกค้า (Testimonials) -->
-    <section class="testimonials">
+    <!-- ส่วนภาพบรรยากาศการให้บริการจริง (Real Service Moments) -->
+    <section
+      class="service-moments"
+      style="
+        padding: 90px 0;
+        background: #fdfbf7; /* เปลี่ยนเป็นสีครีมอ่อนสว่าง สบายตาขึ้น */
+        border-top: 1px solid rgba(15, 36, 56, 0.05);
+      "
+    >
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">เสียงตอบรับจากลูกค้า</span>
-          <h2>ความประทับใจของผู้ใช้บริการ</h2>
+          <h2>ภาพบรรยากาศการให้บริการจริง</h2>
+          <p
+            style="
+              color: var(--slate);
+              font-size: 1rem;
+              max-width: 600px;
+              margin: 10px auto 0;
+            "
+          >
+            ส่งมอบความปลอดภัย และการบริการที่ใส่ใจในทุกทริปการเดินทางของคุณ
+          </p>
         </div>
 
-        <div class="testimonial-grid">
-          <!-- รีวิวที่ 1 -->
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">"__________"</p>
-            <div class="customer-info">
-              <div class="customer-avatar">.</div>
-              <div>
-                <div class="customer-name">คุณ "__________"</div>
-                <div class="customer-role">ใช้บริการ "__________"</div>
-              </div>
-            </div>
+        <!-- กรอบรูปแกลเลอรี (ปรับให้แสดง 3 รูปแรกก่อน) -->
+        <div class="moments-grid">
+          <div class="moment-card">
+            <img
+              src="rw1.jpg"
+              alt="บรรยากาศบริการ 1"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/0f2438/d4b483?text=Service+1'
+              "
+            />
+          </div>
+          <div class="moment-card">
+            <img
+              src="rw2.jpg"
+              alt="บรรยากาศบริการ 2"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/0f2438/d4b483?text=Service+2'
+              "
+            />
+          </div>
+          <div class="moment-card">
+            <img
+              src="rw3.jpg"
+              alt="บรรยากาศบริการ 3"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/0f2438/d4b483?text=Service+3'
+              "
+            />
           </div>
 
-          <!-- รีวิวที่ 2 -->
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">"__________"</p>
-            <div class="customer-info">
-              <div class="customer-avatar">.</div>
-              <div>
-                <div class="customer-name">คุณ "__________"</div>
-                <div class="customer-role">ใช้บริการ "__________"</div>
-              </div>
-            </div>
+          <!-- ใส่คลาส hidden-moment ที่รูปที่ 4 เป็นต้นไป (ซ่อนไว้รอเปิดพร้อมกันทีเดียว 6 รูป) -->
+          <div class="moment-card hidden-moment">
+            <img
+              src="rw4.jpg"
+              alt="บรรยากาศบริการ 4"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/0f2438/d4b483?text=Service+4'
+              "
+            />
           </div>
+          <div class="moment-card hidden-moment">
+            <img
+              src="rw5.jpg"
+              alt="บรรยากาศบริการ 5"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/0f2438/d4b483?text=Service+5'
+              "
+            />
+          </div>
+          <div class="moment-card hidden-moment">
+            <img
+              src="rw6.jpg"
+              alt="บรรยากาศบริการ 6"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/0f2438/d4b483?text=Service+6'
+              "
+            />
+          </div>
+          <div class="moment-card hidden-moment">
+            <img
+              src="rw7.jpg"
+              alt="บรรยากาศบริการ 7"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/0f2438/d4b483?text=Service+7'
+              "
+            />
+          </div>
+          <div class="moment-card hidden-moment">
+            <img
+              src="rw8.jpg"
+              alt="บรรยากาศบริการ 8"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/0f2438/d4b483?text=Service+8'
+              "
+            />
+          </div>
+          <div class="moment-card hidden-moment">
+            <img
+              src="rw9.jpg"
+              alt="บรรยากาศบริการ 9"
+              onerror="
+                this.src =
+                  'https://placehold.co/600x400/0f2438/d4b483?text=Service+9'
+              "
+            />
+          </div>
+        </div>
 
-          <!-- รีวิวที่ 3 -->
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">"__________"</p>
-            <div class="customer-info">
-              <div class="customer-avatar">.</div>
-              <div>
-                <div class="customer-name">คุณ "__________"</div>
-                <div class="customer-role">ใช้บริการ "__________"</div>
-              </div>
-            </div>
-          </div>
+        <!-- ปุ่มกดดูเพิ่มเติม -->
+        <div style="text-align: center; margin-top: 40px">
+          <button
+            id="toggleMomentsBtn"
+            class="btn-secondary"
+            style="
+              background: var(--white);
+              cursor: pointer;
+              border-radius: 999px;
+              padding: 14px 35px;
+              font-family: var(--font-body);
+              font-weight: 600;
+            "
+          >
+            📷 ดูภาพบรรยากาศเพิ่มเติม ↓
+          </button>
         </div>
       </div>
     </section>
@@ -247,13 +336,42 @@
     <!-- ใส่โค้ดนี้ไว้ก่อนปิดแท็ก body ในทุกๆ หน้า -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        // 1. เมนูมือถือ Hamburger
         const hamburger = document.querySelector(".hamburger-menu");
         const navLinks = document.querySelector(".nav-links");
 
         if (hamburger && navLinks) {
           hamburger.addEventListener("click", function () {
-            // สั่งเปิด-ปิดคลาส active เพื่อแสดง/ซ่อนเมนู
             navLinks.classList.toggle("active");
+          });
+        }
+
+        // 2. ปุ่มเปิด/ซ่อน ภาพบรรยากาศให้บริการจริง (9 รูป)
+        const toggleBtn = document.getElementById("toggleMomentsBtn");
+        const hiddenMoments = document.querySelectorAll(".hidden-moment");
+        let isExpanded = false;
+
+        if (toggleBtn && hiddenMoments.length > 0) {
+          toggleBtn.addEventListener("click", function () {
+            isExpanded = !isExpanded;
+            hiddenMoments.forEach(function (card) {
+              card.style.display = isExpanded ? "block" : "none";
+            });
+
+            if (isExpanded) {
+              toggleBtn.innerHTML = "↑ ย่อรูปภาพเก็บ";
+              toggleBtn.style.background = "var(--brass-light)";
+              toggleBtn.style.color = "#000000";
+            } else {
+              toggleBtn.innerHTML =
+                "📷 ดูภาพบรรยากาศเพิ่มเติม (ทั้งหมด 9 รูป) ↓";
+              toggleBtn.style.background = "var(--white)";
+              toggleBtn.style.color = "var(--navy)";
+              // เลื่อนหน้าจอเบาๆ กลับมาที่หัวข้อแกลเลอรีตอนกดย่อ
+              document
+                .querySelector(".service-moments")
+                .scrollIntoView({ behavior: "smooth" });
+            }
           });
         }
       });

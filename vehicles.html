@@ -23,7 +23,7 @@
         <nav class="nav-links">
           <a href="index.html">หน้าแรก</a>
           <a href="services.html">บริการของเรา</a>
-          <a href="vehicles.html">ประเภทรถ</a>
+          <a href="vehicles.html" class="active">ประเภทรถ</a>
           <a href="contact.html">ติดต่อเรา</a>
         </nav>
 
@@ -50,7 +50,8 @@
           "
         >
           <strong style="color: var(--navy); font-weight: 600"
-            >เลือกรถที่ใช่ เพื่อทุกการเดินทางที่สะอาด กว้างขวาง และปลอดภัย</strong
+            >เลือกรถที่ใช่ เพื่อทุกการเดินทางที่สะอาด กว้างขวาง
+            และปลอดภัย</strong
           >
         </h1>
       </div>
@@ -60,7 +61,6 @@
       <div class="container">
         <div class="vehicle-grid">
           <!-- รถคันที่ 1: Toyota Altis -->
-          <!-- ตัวอย่างสำหรับรถทุกคัน -->
           <div class="vehicle-card">
             <div class="vehicle-image">
               <img src="tyt altis.jpg" alt="Toyota Altis" />
@@ -74,17 +74,13 @@
                 คล่องตัว นุ่มนวล นั่งสบาย เหมาะสำหรับการเดินทางในเมือง
                 ติดต่อธุรกิจ หรือบริการรับ-ส่งสนามบินสำหรับกลุ่มเล็ก
               </p>
-              <div class="vehicle-price">
-                เริ่มต้น <strong>_____</strong> / วัน
-              </div>
-              <!-- ปุ่มหลัก: สอบถามคิวว่าง -->
+              <!-- ลบส่วน vehicle-price ออกแล้ว -->
               <a
                 href="contact.html"
                 class="btn-primary"
                 style="width: 100%; text-align: center; justify-content: center"
                 >สอบถามคิวว่าง</a
               >
-              <!-- ข้อความลิงก์: ดูรูปภาพเพิ่มเติม (เปลี่ยนจากปุ่มมาเป็นข้อความกดได้) -->
               <div class="photo-link-wrap">
                 <a href="gallery-altis.html" class="photo-link"
                   >ดูรูปภาพเพิ่มเติม</a
@@ -108,17 +104,13 @@
                 เหมาะสำหรับผู้บริหาร รับรองแขก VIP
                 หรือการเดินทางที่ต้องการความพรีเมียม
               </p>
-              <div class="vehicle-price">
-                เริ่มต้น <strong>_____</strong> / วัน
-              </div>
-              <!-- ปุ่มหลัก: สอบถามคิวว่าง -->
+              <!-- ลบส่วน vehicle-price ออกแล้ว -->
               <a
                 href="contact.html"
                 class="btn-primary"
                 style="width: 100%; text-align: center; justify-content: center"
                 >สอบถามคิวว่าง</a
               >
-              <!-- ข้อความลิงก์: ดูรูปภาพเพิ่มเติม (เปลี่ยนจากปุ่มมาเป็นข้อความกดได้) -->
               <div class="photo-link-wrap">
                 <a href="gallery-camry.html" class="photo-link"
                   >ดูรูปภาพเพิ่มเติม</a
@@ -130,7 +122,7 @@
           <!-- รถคันที่ 3: Toyota Commuter -->
           <div class="vehicle-card">
             <div class="vehicle-image">
-              <img src="tyt cmt.jpg" alt="Toyota Commuter" />
+              <img src="tyt cmt.png" alt="Toyota Commuter" />
             </div>
             <div class="vehicle-info">
               <h2>Toyota Commuter</h2>
@@ -141,17 +133,13 @@
                 ยอดฮิตสำหรับทริปครอบครัวใหญ่หรือกลุ่มเพื่อน เบาะกว้างขวาง
                 แอร์เย็นฉ่ำทุกที่นั่ง เดินทางไกลสบาย บรรจุสัมภาระได้จุใจ
               </p>
-              <div class="vehicle-price">
-                เริ่มต้น <strong>_____</strong> / วัน
-              </div>
-              <!-- ปุ่มหลัก: สอบถามคิวว่าง -->
+              <!-- ลบส่วน vehicle-price ออกแล้ว -->
               <a
                 href="contact.html"
                 class="btn-primary"
                 style="width: 100%; text-align: center; justify-content: center"
                 >สอบถามคิวว่าง</a
               >
-              <!-- ข้อความลิงก์: ดูรูปภาพเพิ่มเติม (เปลี่ยนจากปุ่มมาเป็นข้อความกดได้) -->
               <div class="photo-link-wrap">
                 <a href="gallery-cmt.html" class="photo-link"
                   >ดูรูปภาพเพิ่มเติม</a
@@ -160,7 +148,38 @@
             </div>
           </div>
 
-          <!-- รถคันที่ 4: Toyota Fortuner -->
+          <!-- รถคันที่ 4: Toyota Commuter VIP -->
+          <div class="vehicle-card">
+            <div class="vehicle-image">
+              <img src="tyt cmt vip.jpg" alt="Toyota Commuter VIP" />
+            </div>
+            <div class="vehicle-info">
+              <h2>Toyota Commuter VIP</h2>
+              <div class="vehicle-specs">
+                <span class="spec-item"
+                  >👤 มีให้เลือก 3 แบบ : 8, 9, 10 ที่นั่ง</span
+                >
+              </div>
+              <p>
+                ยอดฮิตสำหรับเดินทางเป็นกลุ่ม เบาะ VIP นุ่มสบาย แอร์เย็นทั่วคัน
+                พื้นที่สัมภาระกว้างขวาง
+              </p>
+              <!-- ลบส่วน vehicle-price ออกแล้ว -->
+              <a
+                href="contact.html"
+                class="btn-primary"
+                style="width: 100%; text-align: center; justify-content: center"
+                >สอบถามคิวว่าง</a
+              >
+              <div class="photo-link-wrap">
+                <a href="gallery-cmt-vip.html" class="photo-link"
+                  >ดูรูปภาพเพิ่มเติม</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- รถคันที่ 5: Toyota Fortuner -->
           <div class="vehicle-card">
             <div class="vehicle-image">
               <img src="tyt ftn.jpg" alt="Toyota Fortuner" />
@@ -175,17 +194,13 @@
                 เหมาะสำหรับทริปต่างจังหวัด ขึ้นเขา
                 หรือกลุ่มลูกค้าที่ต้องการพื้นที่กว้างกว่ารถเก๋ง
               </p>
-              <div class="vehicle-price">
-                เริ่มต้น <strong>_____</strong> / วัน
-              </div>
-              <!-- ปุ่มหลัก: สอบถามคิวว่าง -->
+              <!-- ลบส่วน vehicle-price ออกแล้ว -->
               <a
                 href="contact.html"
                 class="btn-primary"
                 style="width: 100%; text-align: center; justify-content: center"
                 >สอบถามคิวว่าง</a
               >
-              <!-- ข้อความลิงก์: ดูรูปภาพเพิ่มเติม (เปลี่ยนจากปุ่มมาเป็นข้อความกดได้) -->
               <div class="photo-link-wrap">
                 <a href="gallery-ftn.html" class="photo-link"
                   >ดูรูปภาพเพิ่มเติม</a
@@ -194,7 +209,7 @@
             </div>
           </div>
 
-          <!-- รถคันที่ 5: Alphard -->
+          <!-- รถคันที่ 6: Alphard -->
           <div class="vehicle-card">
             <div class="vehicle-image">
               <img src="Alphard.jpg" alt="Alphard" />
@@ -209,17 +224,13 @@
                 เหมาะสำหรับผู้บริหารระดับสูง แขกคนสำคัญ
                 หรือทริปที่ต้องการความผ่อนคลายสูงสุด
               </p>
-              <div class="vehicle-price">
-                เริ่มต้น <strong>_____</strong> / วัน
-              </div>
-              <!-- ปุ่มหลัก: สอบถามคิวว่าง -->
+              <!-- ลบส่วน vehicle-price ออกแล้ว -->
               <a
                 href="contact.html"
                 class="btn-primary"
                 style="width: 100%; text-align: center; justify-content: center"
                 >สอบถามคิวว่าง</a
               >
-              <!-- ข้อความลิงก์: ดูรูปภาพเพิ่มเติม (เปลี่ยนจากปุ่มมาเป็นข้อความกดได้) -->
               <div class="photo-link-wrap">
                 <a href="gallery-alphard.html" class="photo-link"
                   >ดูรูปภาพเพิ่มเติม</a
@@ -228,7 +239,7 @@
             </div>
           </div>
 
-          <!-- รถคันที่ 6: Hyundai H-1 -->
+          <!-- รถคันที่ 7: Hyundai H-1 -->
           <div class="vehicle-card">
             <div class="vehicle-image">
               <img src="h1.jpg" alt="Hyundai H-1" />
@@ -243,17 +254,13 @@
                 เหมาะสำหรับทริปครอบครัวที่มีผู้สูงอายุ
                 หรือต้องการพื้นที่เหนือศีรษะที่โปร่งโล่งเป็นพิเศษ
               </p>
-              <div class="vehicle-price">
-                เริ่มต้น <strong>_____</strong> / วัน
-              </div>
-              <!-- ปุ่มหลัก: สอบถามคิวว่าง -->
+              <!-- ลบส่วน vehicle-price ออกแล้ว -->
               <a
                 href="contact.html"
                 class="btn-primary"
                 style="width: 100%; text-align: center; justify-content: center"
                 >สอบถามคิวว่าง</a
               >
-              <!-- ข้อความลิงก์: ดูรูปภาพเพิ่มเติม (เปลี่ยนจากปุ่มมาเป็นข้อความกดได้) -->
               <div class="photo-link-wrap">
                 <a href="gallery-h1.html" class="photo-link"
                   >ดูรูปภาพเพิ่มเติม</a
@@ -262,7 +269,7 @@
             </div>
           </div>
 
-          <!-- รถคันที่ 7: รถบัส (Bus) -->
+          <!-- รถคันที่ 8: รถบัส (Bus) -->
           <div class="vehicle-card">
             <div class="vehicle-image">
               <img src="bus.jpg" alt="รถบัส" />
@@ -277,17 +284,13 @@
                 พร้อมสิ่งอำนวยความสะดวกครบครัน
                 และพื้นที่เก็บสัมภาระใต้ท้องรถขนาดใหญ่
               </p>
-              <div class="vehicle-price">
-                เริ่มต้น <strong>_____</strong> / วัน
-              </div>
-              <!-- ปุ่มหลัก: สอบถามคิวว่าง -->
+              <!-- ลบส่วน vehicle-price ออกแล้ว -->
               <a
                 href="contact.html"
                 class="btn-primary"
                 style="width: 100%; text-align: center; justify-content: center"
                 >สอบถามคิวว่าง</a
               >
-              <!-- ข้อความลิงก์: ดูรูปภาพเพิ่มเติม (เปลี่ยนจากปุ่มมาเป็นข้อความกดได้) -->
               <div class="photo-link-wrap">
                 <a href="gallery-bus.html" class="photo-link"
                   >ดูรูปภาพเพิ่มเติม</a
@@ -296,17 +299,18 @@
             </div>
           </div>
         </div>
-      </section>
-<!-- ใส่โค้ดนี้ไว้ก่อนปิดแท็ก body ในทุกๆ หน้า -->
+      </div>
+    </section>
+    <!-- ใส่โค้ดนี้ไว้ก่อนปิดแท็ก body ในทุกๆ หน้า -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const hamburger = document.querySelector('.hamburger-menu');
-        const navLinks = document.querySelector('.nav-links');
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger-menu");
+        const navLinks = document.querySelector(".nav-links");
 
         if (hamburger && navLinks) {
-          hamburger.addEventListener('click', function() {
+          hamburger.addEventListener("click", function () {
             // สั่งเปิด-ปิดคลาส active เพื่อแสดง/ซ่อนเมนู
-            navLinks.classList.toggle('active');
+            navLinks.classList.toggle("active");
           });
         }
       });
